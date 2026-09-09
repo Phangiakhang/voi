@@ -57,6 +57,7 @@ vector<vector<int>> adj(n, vector<int>(m))  // Mảng n * m phần tử
 ```
 
 Các hàm đi kèm & Cách sử dụng:
+
 > Cú pháp $<tên_vector>.<tên_hàm>(<tham_số>)$
 
 - push_back(x) / emplace_back(x): Thêm phần tử $x$ vào cuối.
@@ -72,6 +73,7 @@ Các hàm đi kèm & Cách sử dụng:
 - max_size(): Số phần tử tối đa mà vector có thể chứa theo giới hạn implementation/allocator.
 - reverse(n): Khai báo trước sức chứa $n$ phần tử (tránh chi phí mở rộng vector nhiều lần).
 - capacity(): Dung lượng bộ nhớ hiện đang được cấp phát.
+
 > Phân biệt cực kỳ quan trọng:
 > size     = số phần tử đang tồn tại
 > capacity = số phần tử có thể chứa trước khi cần cấp phát lại
@@ -88,11 +90,13 @@ Các hàm đi kèm & Cách sử dụng:
 - a.swap(b): Hoán đổi nội dung 2 vector (có thể khác kích thước) với độ phức tạp $~O(1)$.
 
 Các hàm không đi kèm nhưng cực kỳ hữu dụng:
+
 > Cú pháp $<tên_hàm>(<tham_số>)$
 
 - sort(v.begin(), v.end()): Sắp xếp tắng dần.
 - sort(v.begin(), v.end(), greater<int>()): Sắp xếp giảm dần.
 - sort(v.begin(), v.end(), cmp): Sắp xếp với cách so sánh tùy chỉnh (hàm cmp trả về bool).
+
 > Tất cả hàm sắp xếp có độ phức tạp $O(n)$
 
 - reverse(v.begin(), v.end()): Đảo ngược vector.
@@ -101,12 +105,14 @@ Các hàm không đi kèm nhưng cực kỳ hữu dụng:
 - *min_element(v.begin(), v.end()): Tìm phần tử nhỏ nhất.
 - *max_element(v.begin(), v.end()): Tìm phần tử lớn nhất.
 - accumulate(v.begin(), v.end(), 0LL): Tính tổng vector.
+
 > Tất cả các hàm trên chạy với độ phức tạp $O(n)$
 
 Đối với vector đã sort:
 - binary_search(v.begin(), v.end(), x): Trả về true nếu $x$ có tồn tại trong mảng và ngược lại.
 - lower_bound(v.begin(), v.end(), x): Vị trí đầu tiên $>= x$.
 - upper_bound(v.begin(), v.end(), x): Vị trí đầu tiên $> x$.
+
 > Tất cả các hàm trên chạy với độ phức tạp $O(log_2(n))$
 
 Xóa toàn bộ phần tử có giá trị $x$:
