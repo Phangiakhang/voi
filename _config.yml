@@ -1,12 +1,5 @@
+theme: jekyll-theme-midnight
 title: "Tổng hợp kiến thức 📚"
-
-remote_theme: just-the-docs/just-the-docs
-
-url: https://phangiakhang.github.io/tong-hop-kien-thuc
-
 markdown: kramdown
 kramdown:
   math_engine: mathjax
-
-color_scheme: dark
-search_enabled: true
