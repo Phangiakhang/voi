@@ -58,7 +58,7 @@ vector<vector<int>> adj(n, vector<int>(m))  // Mảng n * m phần tử
 
 Các hàm đi kèm & Cách sử dụng:
 
-> Cú pháp $<tên_vector>.<tên_hàm>(<tham_số>)$
+> Cú pháp '<tên_vector>.<tên_hàm>(<tham_số>)'
 
 - push_back(x) / emplace_back(x): Thêm phần tử $x$ vào cuối.
 - pop_back(): Xóa phần tử cuối.
@@ -91,10 +91,10 @@ Các hàm đi kèm & Cách sử dụng:
 
 Các hàm không đi kèm nhưng cực kỳ hữu dụng:
 
-> Cú pháp $<tên_hàm>(<tham_số>)$
+> Cú pháp '<tên_hàm>(<tham_số>)'
 
 - sort(v.begin(), v.end()): Sắp xếp tắng dần.
-- sort(v.begin(), v.end(), greater<int>()): Sắp xếp giảm dần.
+- sort(v.begin(), v.end(), 'greater<int>()'): Sắp xếp giảm dần.
 - sort(v.begin(), v.end(), cmp): Sắp xếp với cách so sánh tùy chỉnh (hàm cmp trả về bool).
 
 > Tất cả hàm sắp xếp có độ phức tạp $O(n)$
