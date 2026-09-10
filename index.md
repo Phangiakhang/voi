@@ -44,7 +44,7 @@ Code:
 
 ### **3. C++ Standard Template Libary (STL)**
 
-*a. $vector$ (Mảng động)*
+*a. `vector` (Mảng động)*
 
 Cơ chế: Lưu trữ dữ liệu trên một khối bộ nhớ liền kề trong RAM. Khi mảng đầy, nó tự động cấp phát một mảng mới có kích thước gấp đôi (hoặc gấp rưỡi), copy dữ liệu cũ sang và xóa mảng cũ.
 
@@ -133,4 +133,97 @@ v.erase(unique(v.begin(), v.end()), v.end());
 - Thêm/xóa ở cuối: $O(1)$ (trung bình).
 - Thêm/xóa ở giữa hoặc đầu: $O(N)$ (tuyệt đối tránh dùng insert hay erase ở giữa vector).
 
+*b. `deque` (Hàng đợi hai đầu)*
+
+Cơ chế: Khác với `vector`, `deque` không lưu dữ liệu trên một dải bộ nhớ liền kề duy nhất. Nó cấp phát các "khối" (chunks) bộ nhớ cố định rời rạc và dùng một mảng con trỏ ở giữa để quản lý các khối này. Điều này cho phép mở rộng không gian lưu trữ ở cả hai đầu $O(1)$ mà không cần copy/dời toàn bộ mảng cũ.
+
+Cách khai báo:
+```cpp
+deque<int> dq;              // deque rỗng
+deque<int> dq(n);           // n phần tử, mặc định là 0
+deque<int> dq(n, x);        // n phần tử, khởi tạo bằng x
+```
+
+*c. `stack` (Ngăn xếp)*
+
+*d. `queue` (Hàng đợi)*
+
+*e. `priority_queue` (Hàng đợi ưu tiên/Heap)*
+
+*f. `set` & `multiset` (Tập hợp)*
+
+*g. `map` (Bảng ánh xạ)*
+
+*h. `unordered_map` & `unordered_set` (Bảng băm)*
+
 ### **4. Xử lí Bit (Bitwise Tricks)**
+
+### **5. Kiểu dữ liệu và xử lý số lớn (Data types & Overflows)**
+
+### **6. Cấu trúc dữ liệu mở rộng (PBDS - Policy Based Data Structures)**
+
+### **7. Lambda & Custom Comparators**
+
+### **8. Kỹ thuật sinh số ngẫu nhiên (Randomization)**
+
+# **II. KỸ THUẬT VÀ TƯ DUY CƠ BẢN (BASIC TECHNIQUES)**
+
+### **1. Mảng cộng dồn (Prefix sum)**
+
+### **2. Mảng hiệu (Difference Array)**
+
+### **3. Rời rạc hóa (Coordinate Compression)**
+
+### **4. Hai con trỏ (Two Pointers)**
+
+### **5. Cửa sổ trượt (Sliding Window)**
+
+### **6. Cấu trúc đơn điệu (Monotonic Stack/Monotonic Queue)**
+
+### **7. Chặt nhị phân (Mảng & Chặt nhị phân kết quả)**
+
+### **8. Tìm kiếm tam phân (Ternary Search)**
+
+### **9. Meet-in-the-Middle**
+
+### **10. Vét cạn & Duyệt**
+
+### **11. Đệ quy có nhớ & Khử đệ quy**
+
+### **12. Thuật toán tham lam (Greedy)**
+
+### **13. Đóng góp của từng phần tử (Contribution Technique)**
+
+# **III: Cấu trúc dữ liệu (Data Structures)**
+
+SEGMENT TREE & FENWICK TREE
+
+### **1. Fenwick Tree (Binary Indexed Tree - BIT)**
+
+### **2. Segment Tree (Cây IT)**
+
+### **3. Segment Tree - Lazy Propagation (Cập nhật đoạn)**
+
+### **4. Segment Tree trên không gian lớn (Dynamic Segment Tree)**
+
+### **5. Persistent Segment Tree**
+
+### **6. IT Walk (Chặt nhị phân trên Segment Tree)**
+
+### **7. Merge Sort Tree**
+
+XỬ LÝ TIỀN TỐ & XÂU
+
+### **8. Cây tiền tố (Trie)**
+
+CẤU TRÚC CHIA CĂN 
+
+### **9. Chia căn (Squaroot Decomposition)**
+
+### **10. Thuật toán Mo (Mo's Algorithm)**
+
+CẤU TRÚC KHÁC
+
+### **11. Sparse Table (Bảng thưa)**
+
+### **12. Disjoint Set Union (DSU - Cấu trúc tập hợp rời rạc)**
