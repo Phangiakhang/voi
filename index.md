@@ -196,7 +196,7 @@ deque<int> dq(n, x);        // n phần tử, khởi tạo bằng x
 
 # **III: Cấu trúc dữ liệu (Data Structures)**
 
-SEGMENT TREE & FENWICK TREE
+## **SEGMENT TREE & FENWICK TREE**
 
 ### **1. Fenwick Tree (Binary Indexed Tree - BIT)**
 
@@ -212,17 +212,17 @@ SEGMENT TREE & FENWICK TREE
 
 ### **7. Merge Sort Tree**
 
-XỬ LÝ TIỀN TỐ & XÂU
+## **XỬ LÝ TIỀN TỐ & XÂU**
 
 ### **8. Cây tiền tố (Trie)**
 
-CẤU TRÚC CHIA CĂN 
+## **CẤU TRÚC CHIA CĂN**
 
 ### **9. Chia căn (Squaroot Decomposition)**
 
 ### **10. Thuật toán Mo (Mo's Algorithm)**
 
-CẤU TRÚC KHÁC
+## **CẤU TRÚC KHÁC**
 
 ### **11. Sparse Table (Bảng thưa)**
 
